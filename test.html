@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi Cielito Hermoso ❤️</title>
+    <style>
+        /* --- ESTILOS GENERALES Y FONDO --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffe5ec, #2cd4f1);
+            color: #4a4a4a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 450px; /* Tamaño perfecto para pantalla de celular */
+            width: 100%;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 30px 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            color: #4dcdff;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p.subtitulo {
+            font-size: 16px;
+            color: #7a7a7a;
+            margin-bottom: 25px;
+        }
+
+        /* --- ESTILOS DEL CONTADOR --- */
+        .contador-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .tiempo-box {
+            background: #4df3ff;
+            color: white;
+            padding: 12px 5px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(255, 77, 109, 0.3);
+        }
+
+        .numero {
+            font-size: 22px;
+            font-weight: bold;
+            display: block;
+        }
+
+        .etiqueta {
+            font-size: 11px;
+            text-transform: uppercase;
+            font-weight: 600;
+            opacity: 0.9;
+        }
+
+        /* --- ESTILOS DE LA GALERÍA --- */
+        .galeria-titulo {
+            color: #4dcdff;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .galeria-contenedor {
+            display: flex;
+            overflow-x: auto; /* Permite deslizar las fotos hacia los lados en el celular */
+            scroll-snap-type: x mandatory;
+            gap: 15px;
+            padding-bottom: 15px;
+            scrollbar-width: none; /* Oculta la barra en Firefox */
+        }
+
+        .galeria-contenedor::-webkit-scrollbar {
+            display: none; /* Oculta la barra en Chrome/Safari */
+        }
+
+        .foto-card {
+            scroll-snap-align: center;
+            flex: 0 0 100%; /* Cada foto toma el ancho completo del contenedor */
+            border-radius: 15px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .foto-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover; /* Evita que la foto se deforme */
+            display: block;
+        }
+
+        .pie-foto {
+            padding: 10px;
+            font-size: 14px;
+            font-style: italic;
+            color: #555;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #4dcdff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Derlys and Stefanie ❤️</h1>
+        <p class="subtitulo">El tiempo que llevamos construyendo nuestra historia:</p>
+
+        <div class="contador-grid">
+            <div class="tiempo-box">
+                <span class="numero" id="dias">948</span>
+                <span class="etiqueta">Días</span>
+            </div>
+            <div class="tiempo-box">
+                <span class="numero" id="horas">00</span>
+                <span class="etiqueta">Horas</span>
+            </div>
+            <div class="tiempo-box">
+                <span class="numero" id="minutos">00</span>
+                <span class="etiqueta">Min</span>
+            </div>
+            <div class="tiempo-box">
+                <span class="numero" id="segundos">00</span>
+                <span class="etiqueta">Seg</span>
+            </div>
+        </div>
+
+        <h2 class="galeria-titulo">Nuestros Momentos Favoritos 📸</h2>
+        <p style="font-size: 12px; color: #aaa; margin-bottom: 10px;">(Desliza hacia los lados en tu pantalla)</p>
+        
+        <div class="galeria-contenedor">
+            <div class="foto-card">
+                <img src="https://i.postimg.cc/wTnyQqc9/6.jpg" alt="Momento 1">
+            </div>
+            
+            <div class="foto-card">
+                <img src="https://i.postimg.cc/J4SD5rcG/11.jpg" alt="Momento 2">
+                
+            </div>
+
+            <div class="foto-card">
+                <img src="https://i.postimg.cc/y89JfMv9/111.jpg" alt="Momento 3">
+                
+            </div>
+
+            <div class="foto-card">
+                <img src="https://i.postimg.cc/X7tGkjKR/2.jpg" alt="Momento 3">
+                
+            </div>
+
+            <div class="foto-card">
+                <img src="https://i.postimg.cc/02hM0kdM/22.jpg" alt="Momento 3">
+                
+            </div>
+
+            <div class="foto-card">
+                <img src="https://i.postimg.cc/GmYBMWqP/222.jpg" alt="Momento 3">
+                
+            </div>
+
+            <div class="foto-card">
+                <img src="https://i.postimg.cc/65F2fWLs/3.jpg" alt="Momento 3">
+                
+            </div>
+
+            <div class="foto-card">
+                <img src="https://i.postimg.cc/sDbQ4j9G/33.jpg" alt="Momento 3">
+                
+            </div>
+
+            <div class="foto-card">
+                <img src="https://i.postimg.cc/m2KzyL3J/4.jpg" alt="Momento 3">
+                
+            </div>
+
+            <div class="foto-card">
+                <img src="https://i.postimg.cc/8PxJmpBv/44.jpg" alt="Momento 3">
+                
+            </div>
+
+            <div class="foto-card">
+                <img src="https://i.postimg.cc/K8LK96Jr/444.jpg" alt="Momento 3">
+                
+            </div>
+
+            <div class="foto-card">
+                <img src="https://i.postimg.cc/zX4bFzS8/5.jpg" alt="Momento 3">
+                
+            </div>
+
+            <div class="foto-card">
+                <img src="https://i.postimg.cc/3Jz4F8Cp/55.jpg" alt="Momento 3">
+                
+            </div>
+
+            <div class="foto-card">
+                <img src="https://i.postimg.cc/DwsWC9Bg/555.jpg" alt="Momento 3">
+                
+            </div>
+
+            <div class="foto-card">
+                <img src="https://i.postimg.cc/15bnrmcw/66.jpg" alt="Momento 3">
+                
+            </div>
+
+            <div class="foto-card">
+                <img src="https://i.postimg.cc/8PxJmpB1/7.jpg" alt="Momento 3">
+                
+            </div>
+
+            <div class="foto-card">
+                <img src="https://i.postimg.cc/pL890wqd/77.jpg" alt="Momento 3">
+                
+            </div>
+
+            <div class="foto-card">
+                <img src="https://i.postimg.cc/RV26LSQC/8.jpg" alt="Momento 3">
+                
+            </div>
+
+            <div class="foto-card">
+                <img src="https://i.postimg.cc/kg8Vj0fb/88.jpg" alt="Momento 3">
+                
+            </div>
+
+            <div class="foto-card">
+                <img src="https://i.postimg.cc/bN4D9yHN/9.jpg" alt="Momento 3">
+                
+            </div>
+
+            <div class="foto-card">
+                <img src="https://i.postimg.cc/htxJCkpm/99.jpg" alt="Momento 3">
+                
+            </div>
+            
+        </div>
+
+        <footer>Hecho con amor por mí para ti✨</footer>
+    </div>
+
+    <script>
+        // CONFIGURA TU FECHA AQUÍ
+        // Año, Mes (¡Ojo! Enero es 0, Febrero es 1, Marzo es 2... Diciembre es 11), Día, Hora, Minutos
+        // Ejemplo: 15 de Octubre de 2024 a las 19:30 => new Date(2024, 9, 15, 19, 30, 0)
+        const fechaInicio = new Date(2023, 10, 11, 19, 30, 0); 
+
+        function actualizarContador() {
+            const ahora = new Date();
+            const diferencia = ahora - fechaInicio; // Diferencia en milisegundos
+
+            // Cálculos matemáticos para convertir milisegundos a días, horas, minutos y segundos
+            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+            // Insertar los números en el HTML (añadiendo un '0' a la izquierda si es menor de 10)
+            document.getElementById('dias').innerText = dias;
+            document.getElementById('horas').innerText = horas < 10 ? '0' + horas : horas;
+            document.getElementById('minutos').innerText = minutos < 10 ? '0' + minutos : minutos;
+            document.getElementById('segundos').innerText = segundos < 10 ? '0' + segundos : segundos;
+        }
+
+        // Ejecutar la función inmediatamente y luego cada 1 segundo
+        actualizarContador();
+        setInterval(actualizarContador, 1000);
+    </script>
+</body>
+</html>
